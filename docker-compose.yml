@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+        01_hands-on:
+                restart: always
+                build:
+                        context: ./01_handson
+                        dockerfile: Dockerfile
+                read_only: true
+                ports:
+                        - '9010:9010'
+
+        02_hands-on:
+                restart: always
+                build:
+                        context: ./02_handson
+                        dockerfile: Dockerfile
+                read_only: true
+                ports:
+                        - '9020:9020'
+        
+        03_hands-on:
+                restart: always
+                build:
+                        context: ./03_handson
+                        dockerfile: Dockerfile
+                read_only: true
+                ports:
+                        - '9030:9030'
+
+        04_hands-on:
+                restart: always
+                build:
+                        context: ./04_handson
+                        dockerfile: Dockerfile
+                read_only: true
+                ports:
+                        - '9040:9040'
