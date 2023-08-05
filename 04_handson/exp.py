@@ -1,6 +1,6 @@
 from pwn import *
 
-target = remote("pwn.katagaitai-ctf.com", 9014)
+target = remote("pwn-study.katagaitai-ctf.com", 9040)
 
 bss_writable = 0x404040 + 0x100
 

